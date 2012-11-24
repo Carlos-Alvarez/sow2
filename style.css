@@ -1,5 +1,21 @@
-
-
+input[type=text]:active {
+    border: 1px solid red;
+}
+input[type=text]:focus {
+    border: 1px solid red;
+}
+input[type=password]:active {
+    border: 1px solid red;
+}
+input[type=password]:focus {
+    border: 1px solid red;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+    background-color: red;
+    background-image: none;
+}
 #letragrande {
     font-size:120px;
     margin: 50px 10px 30px 10px; 

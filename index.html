@@ -2,15 +2,59 @@
 <html>
     <head>
     <meta charset="utf-8" />
-        <link rel="StyleSheet" type="text/css" href="style.css">
+        
         <link rel="StyleSheet" type="text/css" href="bootstrap/css/bootstrap.css">
+        <link rel="StyleSheet" type="text/css" href="style.css">
         <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
     </head>
     <body>
         <div class="container">
         <div class="row">
         <div class="span4" id="bimages">
-        <p id="letrasuperior"><small>Entrar   Producto/Categoria ▼</small></p>
+        <div class="dropdown" style=" float: left; ">
+            <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                <font color="red">Entrar</font>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <form class="form-horizontal">
+                    <div class="control-group">
+                        <label class="control-label" for="inputEmail">Correo Electrónico</label>
+                        <div class="controls">
+                            <input type="text" id="inputEmail" placeholder="Correo Electrónico">
+                        </div>
+                    </div>
+                    
+                    <div class="control-group">
+                        <label class="control-label" for="inputPassword">Contraseña</label>
+                        <div class="controls">
+                            <input type="password" id="inputPassword" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <div class="controls">
+                            <label class="checkbox">
+                            <input type="checkbox"> Recordarme
+                            </label>
+                            <button type="submit" class="btn btn-danger">Entrar</button>
+                        </div>
+                    </div>
+                </form>
+            </ul>
+        </div>
+        <div class="dropdown" style=" float: right; ">
+            <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+                <font color="red">Productos/categorias</font>
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+                <li><a href="uso.html">Transporte</a></li>
+                <li><a href="uso.html">Textil</a></li>
+                <li><a href="uso.html">Maquinaria</a></li>
+                <li><a href="uso.html">luces e iluminación</a></li>
+                <li><a href="uso.html">Moda Accesorios</a></li>
+            </ul>
+        </div>
         <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQsPypurERizXV8-fpN4pGtWNNbYX5a1Zmv-5SIPmGNq2su4JYg" class="img-rounded" width="145px" height="180px" />
         <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQsPypurERizXV8-fpN4pGtWNNbYX5a1Zmv-5SIPmGNq2su4JYg" class="img-rounded" width="145px" height="180px" />
         </div>
@@ -25,7 +69,19 @@
         <button type="submit" class="btn">Buscar</button>
         </div>
         <div class="span4" id="bimages">
-        <p id="letrasuperior2"><small>Servicio/Categoria ▼</small></p>
+        <div class="dropdown">
+        <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
+         <font color="red">Servicios/categorias</font>
+            <b class="caret"></b>
+         </a>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+        <li><a href="uso.html">Transporte</a></li>
+        <li><a href="uso.html">Textil</a></li>
+        <li><a href="uso.html">Maquinaria</a></li>
+        <li><a href="uso.html">luces e iluminación</a></li>
+        <li><a href="uso.html">Moda Accesorios</a></li>
+        </ul>
+        </div>
         <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQsPypurERizXV8-fpN4pGtWNNbYX5a1Zmv-5SIPmGNq2su4JYg" class="img-rounded" width="145px" height="180px" />
         <img src="http://t0.gstatic.com/images?q=tbn:ANd9GcQsPypurERizXV8-fpN4pGtWNNbYX5a1Zmv-5SIPmGNq2su4JYg" class="img-rounded" width="145px" height="180px" />
         </div>
@@ -104,7 +160,7 @@
 
 
         <font="white"><td>© Sow 2012</td>
-            <td><a href="sobre nosotros.html"><font color="black">Sobre Nosotros</a></td>
+            <td><a href="sobrenosotros.html"><font color="black">Sobre Nosotros</a></td>
             <td><a href=""><font color="black">Patrocinadores</a></td>
             <td><a href=""><font color="black">Clientes</td>
             <td><a href=""><font color="black">Condiciones</td>
@@ -120,6 +176,6 @@
         </div>
         <script type="text/javascript" src="bootstrap/js/jquery-1.8.3.min.js"></script>
         <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-      
+        <script type="text/javascript" src="bootstrap/js/sow2.js"></script>
     </body>
 </html>
